@@ -31,6 +31,12 @@ document.getElementById("diposit-btn").addEventListener("click", function () {
     getSumValue("diposit-balance", inputDipositAmount);
     getSumValue("total-balance", inputDipositAmount);
     errorMessage("error-text-diposit", "");
+    alert(
+      "You have deposited $" +
+        inputDipositAmount +
+        "\r\n" +
+        "Please check your email."
+    );
   } else {
     errorMessage("error-text-diposit", "*Wrong input! Please input number.");
   }
@@ -43,6 +49,12 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
     getSumValue("withdraw-balance", inputWithdrawAmount);
     getSumValue("total-balance", -inputWithdrawAmount);
     errorMessage("error-text-withdraw", "");
+    alert(
+      "You have withdrawn $" +
+        inputWithdrawAmount +
+        "\r\n" +
+        "Please check your email."
+    );
   } else {
     if (inputWithdrawAmount > totalBalance) {
       errorMessage("error-text-withdraw", "*Insufficient balance!");
