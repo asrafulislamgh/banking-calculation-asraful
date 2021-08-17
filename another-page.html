@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind framework  -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Another Page</title>
+</head>
+
+<body>
+    <h2 class="p-2 fixed cursor-pointer bg-indigo-300 rounded m-3 hover:bg-indigo-500 hover:text-white"><a
+            href="index.html">Home
+            page</a></h2>
+    <header>
+        <h2 class="text-6xl text-center p-12">My bank <span class="text-indigo-700 font-light"><span
+                    class="font-bold">Balance </span>Status</span></h2>
+    </header>
+    <main class="w-3/4 mx-auto">
+        <section class="grid grid-cols-3 gap-4">
+            <div class="bg-indigo-500 rounded px-2 py-10 text-center text-white">
+                <h2 class="text-3xl">Diposit</h2>
+                <h2 class="text-5xl font-semibold">$<span id="diposit-balance">530</span></h2>
+            </div>
+            <div class="bg-yellow-500 rounded px-2 py-10 text-center text-white">
+                <h2 class="text-3xl">Withdraw</h2>
+                <h2 class="text-5xl font-semibold">$<span id="withdraw-balance">130</span></h2>
+            </div>
+            <div class="bg-green-500 rounded px-2 py-10 text-center text-white">
+                <h2 class="text-3xl">Balance</h2>
+                <h2 class="text-5xl font-semibold">$<span id="total-balance">400</span></h2>
+            </div>
+        </section>
+
+        <!-- Withdraw and Diposit  -->
+        <section class="grid grid-cols-2 gap-4 my-6">
+            <!-- Diposit Balance  -->
+            <div class="bg-indigo-100 p-10 rounded">
+                <h3 class="font-semibold text-2xl py-4">Diposit</h3>
+                <p id="error-text-diposit"></p>
+                <input id="input-diposit" class="p-2 text-gray-600 block w-full mx-auto my-3" type="text"
+                    placeholder="Diposit amount in $">
+                <button id="diposit-btn"
+                    class="bg-blue-500 px-8 py-2 rounded text-white block my-3 hover:bg-blue-700">Diposit</button>
+            </div>
+            <!-- Withdraw balance  -->
+            <div class="bg-yellow-100 p-10 rounded">
+                <h3 class="font-semibold text-2xl py-4">Withdraw</h3>
+                <p id="error-text-withdraw"></p>
+                <input id="input-withdraw" class="p-2 text-gray-600 block w-full mx-auto my-3" type="text"
+                    placeholder="Withdraw amount in $">
+                <button id="withdraw-btn"
+                    class="bg-yellow-500 px-8 py-2 rounded text-white block my-3 hover:bg-yellow-700">Withdraw</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/diposit-withdraw.js"></script>
+</body>
+
+</html>

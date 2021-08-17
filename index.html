@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind framework  -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Welcome to Bank Asra</title>
+</head>
+
+<body>
+    <header>
+
+        <h2 class="text-6xl text-center p-12">Welcome to <span class="text-indigo-700 font-bold"><span
+                    class="font-light">Bank</span>Asra</span></h2>
+    </header>
+    <main>
+        <div class="bg-indigo-100 w-3/4 mx-auto py-24 px-80">
+            <h3 class="font-semibold text-2xl py-4">Login Form</h3>
+            <p id="error-text"></p>
+            <input id="input-email" class="p-2 text-gray-600 block w-full mx-auto my-3" type="email"
+                placeholder="Your Email">
+            <input id="input-pass" class="p-2 text-gray-600 block w-full mx-auto my-3" type="password"
+                placeholder="Password">
+            <button id="submit"
+                class="bg-blue-500 px-8 py-2 rounded text-white block my-3 hover:bg-blue-700">Submit</button>
+        </div>
+    </main>
+
+    <script src="js/bankScript.js"></script>
+</body>
+
+</html>
